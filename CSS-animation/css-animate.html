@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	ul{position: fixed;bottom: 0;list-style:none;width: 100%;text-align: center;z-index: 100;}
+	li{margin-left: 10px;width: 300px;height: auto;display: inline-block;cursor: pointer;}
+	li:first-child{margin-left: 0;}
+	li img{max-width: 100%;}
+	img{width: 100%;}
+	.cont,.img{width: 100%;text-align: center;}
+	.img{position: absolute;top: 0;margin-left: -50%;left: 50%;}
+	.anima0{
+		animation: one 0.5s ease-out;
+		-moz-animation: one 0.5s ease-out;	
+		-webkit-animation: one 0.5s ease-out;	
+		-o-animation: one 0.5s ease-out;
+	}
+	.anima1{
+		animation: two 0.5s ease-out;
+		-moz-animation: two 0.5s ease-out;	
+		-webkit-animation: two 0.5s ease-out;	
+		-o-animation: two 0.5s ease-out;
+	}
+	.anima2{
+		animation: three 1s ease-in;
+		-moz-animation: three 1s ease-in;	
+		-webkit-animation: three 1s ease-in;	
+		-o-animation: three 1s ease-in;
+	}
+	.anima3{
+		animation: four 1s ease-out;
+		-moz-animation: four 1s ease-out;	
+		-webkit-animation: four 1s ease-out;	
+		-o-animation: four 1s ease-out;
+	}
+	.anima4{
+		animation: five 0.7s ease-in-out;
+		-moz-animation: five 0.7s ease-in-out;	
+		-webkit-animation: five 0.7s ease-in-out;	
+		-o-animation: five 0.7s ease-in-out;
+	}
+	@keyframes one
+	{
+	from {left: -100%;}
+	to {left: 50%;}
+	}
+
+	@-moz-keyframes one /* Firefox */
+	{
+	from {left: -100%;}
+	to {left: 50%;}
+	}
+
+	@-webkit-keyframes one /* Safari 和 Chrome */
+	{
+	from {left: -100%;}
+	to {left: 50%;}
+	}
+
+	@-o-keyframes one /* Opera */
+	{
+	from {left: -100%;}
+	to {left: 50%;}
+	}
+
+	@keyframes two
+	{
+	from {top: 100%;}
+	to {top: 0;}
+	}
+
+	@-moz-keyframes two /* Firefox */
+	{
+	from {top: 100%;}
+	to {top: 0;}
+	}
+
+	@-webkit-keyframes two /* Safari 和 Chrome */
+	{
+	from {top: 100%;}
+	to {top: 0;}
+	}
+
+	@-o-keyframes two /* Opera */
+	{
+	from {top: 100%;}
+	to {top: 0;}
+	}
+
+	@keyframes three
+	{
+	from {width: 10%;top: 50%;margin-left: -80px;margin-top: -45px;}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;}
+	}
+
+	@-moz-keyframes three /* Firefox */
+	{
+	from {width: 10%;top: 50%;margin-left: -80px;margin-top: -45px;}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;}
+	}
+
+	@-webkit-keyframes three /* Safari 和 Chrome */
+	{
+	from {width: 10%;top: 50%;margin-left: -80px;margin-top: -45px;}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;}
+	}
+
+	@-o-keyframes three /* Opera */
+	{
+	from {width: 10%;top: 50%;margin-left: -80px;margin-top: -45px;}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;}
+	}
+
+	@keyframes four
+	{
+	from {width: 200%;top: -50%;margin-left: -1334px;margin-top: -375px;}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;}
+	}
+
+	@-moz-keyframes four /* Firefox */
+	{
+	from {width: 200%;top: -50%;margin-left: -1334px;margin-top: -375px;}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;}
+	}
+
+	@-webkit-keyframes four /* Safari 和 Chrome */
+	{
+	from {width: 200%;top: -50%;margin-left: -1334px;margin-top: -375px;}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;}
+	}
+
+	@-o-keyframes four /* Opera */
+	{
+	from {width: 200%;top: -50%;margin-left: -1334px;margin-top: -375px;}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;}
+	}
+
+
+	@keyframes five
+	{
+	from {width: 10%;top: 50%;margin-left: -80px;margin-top: -45px;
+		transform:rotate(360deg);
+		-ms-transform:rotate(360deg); 	
+		-moz-transform:rotate(360deg); 	
+		-webkit-transform:rotate(360deg); 
+		-o-transform:rotate(360deg); 
+	}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;
+		transform:rotate(0deg);
+		-ms-transform:rotate(0deg); 	
+		-moz-transform:rotate(0deg); 	
+		-webkit-transform:rotate(0deg); 
+		-o-transform:rotate(0deg); 
+	}
+	}
+
+	@-moz-keyframes five /* Firefox */
+	{
+	from {width: 10%;top: 50%;margin-left: -80px;margin-top: -45px;
+		transform:rotate(360deg);
+		-ms-transform:rotate(360deg); 	
+		-moz-transform:rotate(360deg); 	
+		-webkit-transform:rotate(360deg); 
+		-o-transform:rotate(360deg); 
+	}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;
+		transform:rotate(0deg);
+		-ms-transform:rotate(0deg); 	
+		-moz-transform:rotate(0deg); 	
+		-webkit-transform:rotate(0deg); 
+		-o-transform:rotate(0deg); 
+	}
+	}
+
+	@-webkit-keyframes five /* Safari 和 Chrome */
+	{
+	from {width: 10%;top: 50%;margin-left: -80px;margin-top: -45px;
+		transform:rotate(360deg);
+		-ms-transform:rotate(360deg); 	
+		-moz-transform:rotate(360deg); 	
+		-webkit-transform:rotate(360deg); 
+		-o-transform:rotate(360deg); 
+	}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;
+		transform:rotate(0deg);
+		-ms-transform:rotate(0deg); 	
+		-moz-transform:rotate(0deg); 	
+		-webkit-transform:rotate(0deg); 
+		-o-transform:rotate(0deg); 
+	}
+	}
+
+	@-o-keyframes five /* Opera */
+	{
+	from {width: 10%;top: 50%;margin-left: -80px;margin-top: -45px;
+		transform:rotate(360deg);
+		-ms-transform:rotate(360deg); 	
+		-moz-transform:rotate(360deg); 	
+		-webkit-transform:rotate(360deg); 
+		-o-transform:rotate(360deg); 
+	}
+	to {width: 100%;top: 0;margin-left: -50%;margin-top: 0;
+		transform:rotate(0deg);
+		-ms-transform:rotate(0deg); 	
+		-moz-transform:rotate(0deg); 	
+		-webkit-transform:rotate(0deg); 
+		-o-transform:rotate(0deg); 
+	}
+	}
+</style>
+<body>
+	<ul>
+		<li><img src="0.jpg"></li>
+		<li><img src="1.jpg"></li>
+		<li><img src="2.jpg"></li>
+		<li><img src="3.jpg"></li>
+		<li><img src="4.jpg"></li>
+	</ul>
+	<div class="cont">
+		<img src="2.jpg">
+	</div>
+	<div class="img"></div>
+</body>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		function appendImg(i){
+			$("li:eq("+i+")").click(function () {
+				if ($(".img").find('img')) {
+					$(".img").empty()
+					if ($(".img").hasClass("anima0")) {
+						$(".img").removeClass("anima0")
+					}
+					if ($(".img").hasClass("anima1")) {
+						$(".img").removeClass("anima1")
+					}
+					if ($(".img").hasClass("anima2")) {
+						$(".img").removeClass("anima2")
+					}
+					if ($(".img").hasClass("anima3")) {
+						$(".img").removeClass("anima3")
+					}
+					if ($(".img").hasClass("anima4")) {
+						$(".img").removeClass("anima4")
+					}
+				}
+				$(".img").append("<img src='"+i+".jpg'>").addClass("anima"+i);
+			})
+		}
+		appendImg(0);
+		appendImg(1);
+		appendImg(2);
+		appendImg(3);
+		appendImg(4);
+	</script>
+</html>
